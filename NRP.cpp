@@ -86,7 +86,7 @@ int main(int argc, char* argv)
         errMsg = "Unknown error";
     }
     std::cout << errMsg << std::endl;
-    //errMsg = "GetString : url  type error"
+    //errMsg = "GetString : url not exist"
     //期望errMsg = "GetString : R.video.images[1].url  type error" , R代表根，只是一个表示符号，也可以用其它的表示，问题就是如何自动得到某一节点的NRP
     return 0;
 }
