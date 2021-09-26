@@ -87,7 +87,7 @@ int main(int argc, char* argv)
     }
     std::cout << errMsg << std::endl;
     //actual errMsg = "GetString : url not exist"
-    //english : expect errMsg = "GetString : R.video.images[1].url not exist" , the R symbol just represent the root element，R.video.images[1].url is the path from root to the url node
+    //english : expect errMsg = "GetString : R.video.images[1].url not exist" , the symbol R just represent the root element，R.video.images[1].url is the path from root to the url node
     //chinese ：期望errMsg = "GetString : R.video.images[1].url not exist" , R代表根，只是一个表示符号，也可以用其它的表示，问题就是如何自动得到某一节点的NRP
     return 0;
 }
