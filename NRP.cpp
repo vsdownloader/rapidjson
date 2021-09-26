@@ -36,7 +36,7 @@ std::string GetString(Value& op, const char* key)
     return s8;
 }
 
-//辅助解析宏
+//Utils
 #define GOBJ(key) GetObject(op, #key)
 #define GARR(key) GetArray(op, #key)
 #define GSTR(key) GetString(op, #key)
@@ -86,7 +86,8 @@ int main(int argc, char* argv)
         errMsg = "Unknown error";
     }
     std::cout << errMsg << std::endl;
-    //errMsg = "GetString : url not exist"
-    //期望errMsg = "GetString : R.video.images[1].url not exist" , R代表根，只是一个表示符号，也可以用其它的表示，问题就是如何自动得到某一节点的NRP
+    //actual errMsg = "GetString : url not exist"
+    //english : expect errMsg = "GetString : R.video.images[1].url not exist" , the R symbol just represent the root element，R.video.images[1].url is the path from root to the url node
+    //chinese ：期望errMsg = "GetString : R.video.images[1].url not exist" , R代表根，只是一个表示符号，也可以用其它的表示，问题就是如何自动得到某一节点的NRP
     return 0;
 }
